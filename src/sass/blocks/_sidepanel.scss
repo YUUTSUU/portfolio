@@ -9,6 +9,7 @@
     align-items: center;
     z-index: 1;
     &__link {
+        transition: all 0.3s;
         &:hover {
             svg path {
                 fill: red;

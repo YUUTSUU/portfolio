@@ -1,5 +1,5 @@
 .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 60px;
     color: $text-color;
@@ -10,6 +10,10 @@
     &_font-size-16 {
         font-size: 16px;
         line-height: 24px;
+    }
+    &_font-size-20 {
+        font-size: 20px;
+        line-height: 30px;
     }
     &_font-size-36 {
         font-size: 36px;

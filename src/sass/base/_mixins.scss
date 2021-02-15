@@ -11,3 +11,26 @@
         left: -1px;
     }
 }
+
+@mixin before_line {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: $text-color;
+        z-index: -2;
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 43px;
+        height: 1px;
+        background-color: $text-color;
+        z-index: -2;
+        top: 69px;
+        left: 0;
+    }   
+}
