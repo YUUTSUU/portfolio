@@ -11,26 +11,27 @@
         left: -1px;
     }
 }
-
-@mixin before_line {
+@mixin before_line_v {
     &:before {
         content: '';
         position: absolute;
         width: 1px;
-        height: 100%;
+        height: calc(100% + 55px);
         background-color: $text-color;
         z-index: -2;
-        top: 0;
-        left: 0;
+        top: -55px;
+        left: -42px;
     }
-    &:after {
+}
+@mixin before_line_h {
+    &:before {
         content: '';
         position: absolute;
         width: 43px;
         height: 1px;
         background-color: $text-color;
-        z-index: -2;
-        top: 69px;
-        left: 0;
+        z-index: -3;
+        top: 20px;
+        left: -42px;
     }   
 }

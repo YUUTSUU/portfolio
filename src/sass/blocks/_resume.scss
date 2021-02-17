@@ -5,7 +5,6 @@
         text-align: center;
         @include before_circle;
         &:before {
-            top: -5px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -22,19 +21,31 @@
         padding: 0px 65px 0 65px; 
     }
     &__list {
-        display: grid;
-        grid-template-rows: repeat();
+        padding-left: 20px;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: 8px;
+            left: -29px;
+            width: 15px;
+            height: 15px;
+        }
     }
     &__content {
-        display: grid;
-        grid-template-rows: repeat(auto, minmax(129px, auto));
-        row-gap: 45px;
         margin-top: 45px;
-        
+        list-style-type: none;
+        position: relative;
+        @include before_line_v;
+    }
+    &__item {
+        margin-top: 45px;
+        position: relative;
+        @include before_line_h;
     }
     &__header {
         position: relative;
         padding-left: 55px;
+        
     }
     &__img {
         position: absolute;
@@ -46,28 +57,18 @@
         padding-top: 15px;
         left: 0;
     }
-    &__item {
-        position: relative;
-        @include before_line;
-        &:before, &:after {
-            top: -5px;
-            left: -15px;
-        }
-       
+    &__text {
+        padding-top: 10px;
+        line-height: 5px;
     }
-
-
-
-
-
-
-
-
-
-
-    // &__text {
-    //     position: relative;
-    //     height: 200px;
-    //     @include before_line;
-    // }
+    &__long {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__description {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 18px;
+        width: 375px;
+    }
 }
