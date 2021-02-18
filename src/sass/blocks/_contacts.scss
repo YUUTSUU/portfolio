@@ -1,0 +1,91 @@
+.contacts {
+    padding: 126px 0 90px 0;
+    &__content {
+        display: grid;
+        grid-template-columns: 400px 585px;
+        column-gap: 70px;
+        padding: 0 35px 0 50px;
+    }
+    &__img {
+        width: 400px;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 5px 0 0 15px;
+        margin-bottom: 3;
+        @include before_circle;
+        &:before {
+            top: -2px;
+        }
+    }
+    &__text {
+       margin-top: 20px;
+    }
+    &__social {
+        margin-top: 20px;
+    }
+    &__icons {
+        margin-right: 25px;
+        img {
+            max-width: 30px;
+            max-height: 30px;
+            &:hover {
+                filter: opacity(70%);
+            }
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: 45px 188px 45px;
+        column-gap: 25px;
+        row-gap: 30px;
+        label {
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 0;
+            height: 18px;
+            padding: 0 8px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 14px 20px 13px 20px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 14px 20px 13px 20px;
+            font-size: 12px;
+        }
+    }
+    &__button {
+        border: none;
+        width: 220px;
+        &:hover {
+            text-decoration: none;
+            color: $link-color;
+        }
+    }
+}

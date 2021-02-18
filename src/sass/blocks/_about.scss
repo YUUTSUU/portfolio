@@ -2,8 +2,12 @@
     padding-top: 135px;
     &__title {
         position: relative;
-        padding: 2px 0 0 15px;
+        padding: 5px 0 0 15px;
+        margin-bottom: 2px;
         @include before_circle;
+        &:before {
+            top: -2px;
+        }
     }
     &__text {
         font-size: 14px;
@@ -23,9 +27,7 @@
         }
     }
     &__wrapper {
-        padding-top: 5px;
         width: 570px;
-        
     }
     &__items {
         display: flex;

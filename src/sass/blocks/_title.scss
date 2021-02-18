@@ -22,4 +22,16 @@
     &_font-size-48 {
         font-size: 48px;
     }
+    &_header {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_subheader {
+        text-align: center;
+    }
 }
