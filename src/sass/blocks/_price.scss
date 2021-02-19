@@ -16,15 +16,13 @@
         row-gap: 5px;
         justify-content: space-between;
         padding: 0 25px;
-    }
-    &__header {
         position: relative;
         @include before_circle;
         &:before {
             width: 15px;
             height: 15px;
             top: 3px;
-            left: -25px;
+            left: 0;
         }
     }
     &__value {

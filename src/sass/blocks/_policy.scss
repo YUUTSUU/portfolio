@@ -1,0 +1,34 @@
+.policy {
+    border: 1px solid rgba(39, 39, 39, 0.623);
+    margin: 70px;
+    padding: 60px;
+    &__header {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    &__title {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    &__description {
+        margin-bottom: 0;
+    }
+    &__item {
+        padding-left: 40px;
+        span {
+            background-color: rgba(250, 225, 144, 0.699);
+        }
+    }
+    ol {
+        margin-bottom: 0;
+        list-style: none;
+        counter-reset: li;
+        li {
+            &:before {
+                counter-increment: li;
+                content: counters(li, ".") ". ";
+            }
+        }
+    }
+}

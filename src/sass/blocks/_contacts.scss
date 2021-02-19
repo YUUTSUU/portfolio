@@ -66,6 +66,22 @@
             line-height: 18px;
         }
     }
+    &__triggers {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+        grid-column-start: 1;
+        grid-column-end: 3; 
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+    }
     &__textarea {
         position: relative;
         grid-column-start: 1;
@@ -82,7 +98,6 @@
     }
     &__button {
         border: none;
-        width: 220px;
         &:hover {
             text-decoration: none;
             color: $link-color;
